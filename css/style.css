@@ -1,0 +1,49 @@
+body {
+  background-color: #4d178f;
+  color: #23db57;
+  font-family: "Grenze", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 50pt;
+}
+
+header {
+  text-align: center;
+  color: #0b8f31;
+  text-decoration: wavy underline;
+}
+
+main {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#hero {
+  color: #0b8f31;
+  background-color: #dabb90;
+  border: 2px solid #8339db;
+  font-size: 2rem;
+}
+
+#hero img {
+  width: 300px;
+}
+
+#bio ul {
+  text-decoration: solid underline;
+}
+
+#bio li {
+  text-decoration: solid underline #4d178f;
+}
+
+footer {
+  border-top: 2px solid #8339db;
+}

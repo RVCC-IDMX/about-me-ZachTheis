@@ -47,3 +47,7 @@ main {
 footer {
   border-top: 2px solid #8339db;
 }
+
+article div {
+  font-size: 1.25rem;
+}

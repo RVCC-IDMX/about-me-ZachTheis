@@ -1,9 +1,3 @@
-body {
-  background-color: #4d178f;
-  color: #23db57;
-  font-family: "Grenze", serif;
-}
-
 h1,
 h2,
 h3,
@@ -18,6 +12,12 @@ header {
   text-align: center;
   color: #0b8f31;
   text-decoration: wavy underline;
+}
+
+body {
+  background-color: #4d178f;
+  color: #23db57;
+  font-family: "Grenze", serif;
 }
 
 main {
@@ -36,12 +36,17 @@ main {
   width: 300px;
 }
 
-#bio ul {
-  text-decoration: solid underline;
+#bio ul,
+#hobbies ul {
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 1.5rem;
 }
 
-#bio li {
-  text-decoration: solid underline #4d178f;
+#bio li,
+#hobbies li {
+  font-size: 1.5rem;
+  font-family: "Grenze", serif;
+  text-decoration: none;
 }
 
 footer {
@@ -50,4 +55,21 @@ footer {
 
 article div {
   font-size: 1.25rem;
+}
+
+article div {
+  font-family: "Grenze", serif;
+  text-decoration: none;
+}
+
+#gallery figure {
+  background-color: #dabb90;
+  border: 2pt solid #0b8f31;
+  padding-top: 30pt;
+  color: #0b8f31;
+  font-family: "Grenze", serif;
+}
+
+figcaption {
+  font-size: 1rem;
 }

@@ -55,11 +55,10 @@ footer {
 
 article div {
   font-size: 1.25rem;
-}
-
-article div {
   font-family: "Grenze", serif;
   text-decoration: none;
+  padding-left: 75pt;
+  padding-right: 75pt;
 }
 
 #gallery figure {

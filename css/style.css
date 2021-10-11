@@ -64,12 +64,21 @@ article div {
 
 #gallery figure {
   background-color: #dabb90;
-  border: 2pt solid #0b8f31;
-  padding-top: 30pt;
+  border: 7pt solid #0b8f31;
+  border-top-left-radius: 100pt;
+  border-top-right-radius: 100pt;
+  border-bottom-left-radius: 100pt;
+  border-bottom-right-radius: 100pt;
+  padding-top: 40pt;
+  padding-left: 50pt;
+  padding-right: 50pt;
   color: #0b8f31;
   font-family: "Grenze", serif;
+  width: max-content;
+  margin: 5rem auto;
 }
 
 figcaption {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: black;
 }

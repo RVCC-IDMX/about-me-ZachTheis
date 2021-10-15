@@ -96,6 +96,8 @@ footer {
   #gallery figure {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding-bottom: 40pt;
+    margin: 3rem;
   }
 
   figcaption {
@@ -104,5 +106,10 @@ footer {
     align-items: center;
     font-size: 2rem;
     margin-left: 1rem;
+    flex-wrap: wrap;
   }
+}
+
+* {
+  border: 1pt solid black;
 }

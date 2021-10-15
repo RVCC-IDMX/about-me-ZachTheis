@@ -7,6 +7,13 @@ h6 {
   font-size: 50pt;
 }
 
+h2 {
+  text-decoration: solid underline;
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 1.7rem;
+  margin-bottom: -1rem;
+}
+
 header {
   text-align: center;
   color: #0b8f31;
@@ -42,16 +49,10 @@ main {
   text-decoration: none;
 }
 
-footer {
-  border-top: 2px solid #8339db;
-}
-
-article div {
-  font-size: 1.25rem;
-  font-family: "Grenze", serif;
-  text-decoration: none;
-  padding-left: 75pt;
-  padding-right: 75pt;
+#hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #gallery figure {
@@ -64,11 +65,14 @@ article div {
   padding-top: 40pt;
   padding-left: 50pt;
   padding-right: 50pt;
+  padding-bottom: 30pt;
   color: #0b8f31;
   font-family: "Grenze", serif;
   width: max-content;
   margin: 5rem auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 figcaption {
@@ -76,8 +80,29 @@ figcaption {
   color: black;
 }
 
-h2 {
-  text-decoration: solid underline;
-  font-family: "Grenze Gotisch", cursive;
-  font-size: 1.7rem;
+article div {
+  font-size: 1.25rem;
+  font-family: "Grenze", serif;
+  text-decoration: none;
+  padding-left: 75pt;
+  padding-right: 75pt;
+}
+
+footer {
+  border-top: 2px solid #8339db;
+}
+
+@media (min-width: 60em) {
+  #gallery figure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
 }

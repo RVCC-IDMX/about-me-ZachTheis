@@ -68,7 +68,7 @@ main {
   padding-bottom: 30pt;
   color: #0b8f31;
   font-family: "Grenze", serif;
-  width: max-content;
+
   margin: 5rem auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -93,18 +93,23 @@ footer {
 }
 
 @media (min-width: 60em) {
+  #gallery {
+    background-color: #4d178f;
+  }
   #gallery figure {
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding-bottom: 40pt;
-    margin: 3rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 80%;
   }
 
   figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 15pt;
     margin-left: 1rem;
     flex-wrap: wrap;
   }

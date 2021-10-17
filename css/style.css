@@ -94,21 +94,18 @@ figcaption {
 }
 
 article div {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Grenze", serif;
   text-decoration: none;
-  padding-left: 75pt;
-  padding-right: 75pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
 }
 
 footer {
   border-top: 2px solid #8339db;
 }
 
-@media (min-width: 60em) {
-  #gallery {
-    background-color: #4d178f;
-  }
+@media screen and (min-width: 60em) {
   #gallery figure {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -118,6 +115,10 @@ footer {
     width: 80%;
   }
 
+  figure img {
+    width: 100%;
+  }
+
   figcaption {
     display: flex;
     justify-content: center;
@@ -125,6 +126,25 @@ footer {
     font-size: 15pt;
     margin-left: 1rem;
     flex-wrap: wrap;
+  }
+
+  article div {
+    font-size: 1.25rem;
+    columns: 20rem;
+    max-width: 100%;
+  }
+
+  article p {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
   }
 }
 

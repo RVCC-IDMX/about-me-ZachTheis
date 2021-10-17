@@ -136,6 +136,7 @@ footer {
 
   article p {
     margin-top: 0px;
+    text-align: left;
   }
 }
 
@@ -144,10 +145,28 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    align-items: center;
+    justify-content: center;
+  }
+
+  #gallery hr {
+    display: none;
+  }
+
+  #gallery h1 {
+    grid-column: 1/4;
+  }
+
+  #gallery figure {
+    display: block;
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0;
   }
 }
 
-* {
-  border: 1pt solid red;
-}
+/* * {
+  outline: 1pt solid red;
+} */

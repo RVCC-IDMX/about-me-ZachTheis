@@ -1,8 +1,7 @@
 h1,
 h2,
 h4,
-h5,
-h6 {
+h5 {
   font-family: "Grenze Gotisch", cursive;
   font-size: 50pt;
   text-align: center;
@@ -91,6 +90,44 @@ main {
 figcaption {
   font-size: 1.2rem;
   color: black;
+}
+
+#video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px;
+  height: 0px;
+  width: 75%;
+  border: 7pt solid #0b8f31;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h6 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+  background-color: #dabb90;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  border: 3pt solid #0b8f31;
+  width: 60%;
 }
 
 article div {

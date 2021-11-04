@@ -167,12 +167,20 @@ fieldset {
   border: 2px solid #23db57;
   margin-top: 1em;
   margin-bottom: 1em;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
 legend {
   background-color: #0b8f31;
   border: 2px solid #23db57;
   padding: 0.5em;
+  color: rgb(131, 57, 219);
+  font-weight: bold;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#contact label {
+  padding-top: 0;
 }
 
 #contact input,
@@ -181,6 +189,16 @@ legend {
 #contact button {
   padding: 0.5em;
   font-size: 1rem;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#contact li input {
+  box-shadow: none;
 }
 
 #contact ul {

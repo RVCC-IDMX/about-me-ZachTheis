@@ -142,6 +142,55 @@ footer {
   border-top: 2px solid #8339db;
 }
 
+#formElements {
+  display: grid;
+  row-gap: 0.5em;
+}
+
+#contact {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+fieldset {
+  border: 2px solid #23db57;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+legend {
+  background-color: #23db57;
+  color: #dabb90;
+  padding: 0.5em;
+}
+
+#contact input,
+#contact textarea,
+#contact select,
+#contact button {
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#contact li {
+  margin: 1rem;
+}
+
+#contact button {
+  background-color: #23db57;
+  color: #dabb90;
+  border: 1px solid #0b8f31;
+  max-width: 400px;
+  width: 50%;
+  justify-self: center;
+}
+
 @media screen and (min-width: 52em) {
   #gallery figure {
     display: grid;

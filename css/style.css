@@ -197,6 +197,16 @@ legend {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+#contact input,
+#contact textarea {
+  outline: none;
+}
+
+#contact textarea {
+  resize: vertical;
+  max-height: 500px;
+}
+
 #contact li input {
   box-shadow: none;
 }

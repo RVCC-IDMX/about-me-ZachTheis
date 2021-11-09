@@ -243,7 +243,7 @@ legend {
   );
 }
 
-#contac button:active {
+#contact button:active {
   background-color: rgb(77, 23, 143);
   background: linear-gradient(
     0deg,

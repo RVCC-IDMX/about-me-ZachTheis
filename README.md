@@ -25,14 +25,32 @@ The two fonts used on this site are Grenze and Grenze Gotish. Grenze makes up th
 
 ### Hero
 
+The hero section consists simply of an avatar, my name, and my location. The avatar image was generated through [Avatar Generator](https://getavataaars.com/). This was my introduction into embedding images in a web page.
+
 ### Bio
+
+The bio section is a bullet point list of a few facts about me, which will be updated shortly. This section uses the display: flex, flex-direction: column, and align-items: left properties to organize the lists.
 
 ### Gallery
 
+My first foray into responsive design, the photo gallery's layout changes on devices with different size screens. On small screens, such as iPhones, images are contained in a tan box with a thick dark green border with a border-radius on all corners and a slight box-shadow. The images have a caption describing them below the picture. On slighly larger devices, such as iPads, the caption moves to the right of the image, centered horizontally and vertically in a grid column that takes up 1/3 of the box. On full screens, the tan box with the green border disappears. The images still have a shadow, but are now laid out horizontally instead of vertically. The captions appear flush to the bottom of the image in a tan box.
+
+This section displays the grid and flexbox display properties, as well as media queries.
+
 ### Video
+
+The video footage embedded in this section is free use footage from [Pexels](https://www.pexels.com/) with audio I recorded and spliced. The video container has a thick green outline and a shadow to set it apart from the background. I elected to keep the caption slightly separated from the video, as so few words would look silly in a box nearly the entire width of the screen.
 
 ### Blog
 
+This section will be updated shortly.
+
 ### Contact Form
 
+As this site has been deployed on [Netlify](https://www.netlify.com), the contact form will actually accept and store submissions. The submit button has both a hover and an active effect on it to make it clear when it is being highlighted and "pushed."
+
+I made a slight deviation from my color scheme for the text in the dark green legends, as the other colors were hard to read. I kept with a similar pallet and selected a lighter purple (rgb 187, 154, 224) that would have more contrast against the background.
+
 # Citations
+
+Video footage by [Åke Wall from Pexels](https://www.pexels.com/video/a-person-walking-in-dark-forest-5582521/).

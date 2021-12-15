@@ -135,6 +135,18 @@ figcaption {
   filter: blue(3px);
 }
 
+.img-3 img {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.img-3:hover img {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
 #video {
   display: flex;
   flex-direction: column;

@@ -54,3 +54,7 @@ I made a slight deviation from my color scheme for the text in the dark green le
 # Citations
 
 Video footage by [Åke Wall from Pexels](https://www.pexels.com/video/a-person-walking-in-dark-forest-5582521/).
+
+[Demo: CSS image hover effects](https://codepen.io/nxworld/pen/ZYNOBZ)
+
+[W3: How To - Image Hover Overlay](https://www.w3schools.com/howto/howto_css_image_overlay.asp)

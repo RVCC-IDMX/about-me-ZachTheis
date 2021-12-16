@@ -81,7 +81,6 @@ main {
   padding-bottom: 30pt;
   color: #0b8f31;
   font-family: "Grenze", serif;
-
   margin: 5rem auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -145,6 +144,73 @@ figcaption {
 .img-3:hover img {
   -webkit-filter: sepia(100%);
   filter: sepia(100%);
+}
+
+.img-4 {
+  position: relative;
+}
+
+.img-4::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.img-4:hover::before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+.img-5 img {
+}
+
+.img-5:hover img {
+}
+
+.img-6 img {
+}
+
+.img-6:hover img {
 }
 
 #video {

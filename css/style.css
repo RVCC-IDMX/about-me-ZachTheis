@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
 h1,
 h2,
 h4,
@@ -92,21 +100,25 @@ figcaption {
   color: black;
 }
 
-.img-1 .container {
+.img-1 {
   position: relative;
+  overflow: none;
 }
 
 .img-1 .overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
   background-color: #8339db;
+  border-top-left-radius: 100pt;
+  border-top-right-radius: 100pt;
+  border-bottom-left-radius: 100pt;
+  border-bottom-right-radius: 100pt;
+  outline: 9.5pt solid #8339db;
 }
 
 .img-1:hover .overlay {
@@ -117,9 +129,10 @@ figcaption {
   color: whitesmoke;
   font-size: 30px;
   position: absolute;
-  top: 45%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
   text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .img-2 img {
@@ -156,12 +169,10 @@ figcaption {
   left: 50%;
   z-index: 2;
   display: block;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   background: rgba(255, 255, 255, 0.2);
-    rgba(255, 255, 255, 0.3) 100%
-  );
   border-radius: 100%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -382,8 +393,7 @@ legend {
 }
 
 @media screen and (min-width: 52em) {
-  #gallery figure,
-  .overlay {
+  #gallery figure {
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding-bottom: 40pt;
@@ -434,7 +444,8 @@ legend {
     grid-column: 1/4;
   }
 
-  #gallery figure {
+  #gallery figure,
+  .img-1 .overlay {
     display: block;
     border: none;
     border-top-left-radius: 0;
@@ -442,6 +453,7 @@ legend {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 0;
+    outline: 0;
   }
 }
 

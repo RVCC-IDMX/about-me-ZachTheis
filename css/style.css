@@ -208,9 +208,12 @@ figcaption {
 }
 
 .img-6 img {
+  transition: 1s ease;
 }
 
 .img-6:hover img {
+  border-radius: 50%;
+  transition: 1s ease;
 }
 
 #video {

@@ -195,16 +195,21 @@ figcaption {
     opacity: 1;
   }
   100% {
-    width: 200%;
-    height: 200%;
+    width: 130%;
+    height: 130%;
     opacity: 0;
   }
 }
 
 .img-5 img {
+  transition: 1s ease;
 }
 
-.img-5:hover img {
+.img-5 img:hover {
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotate(-10deg);
+  transition: 1s ease;
 }
 
 .img-6 img {

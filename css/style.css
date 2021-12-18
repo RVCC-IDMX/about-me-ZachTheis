@@ -100,6 +100,7 @@ figcaption {
   color: black;
 }
 
+/* Image 1: Fade-In Overlay */
 .img-1 {
   position: relative;
   overflow: none;
@@ -135,6 +136,7 @@ figcaption {
   transform: translate(-50%, -50%);
 }
 
+/* Image 2: Blur */
 .img-2 img {
   -webkit-filter: blur(0);
   filter: blur(0);
@@ -147,6 +149,7 @@ figcaption {
   filter: blue(3px);
 }
 
+/* Image 3: Sepia */
 .img-3 img {
   -webkit-filter: sepia(0);
   filter: sepia(0);
@@ -159,6 +162,7 @@ figcaption {
   filter: sepia(100%);
 }
 
+/* Image 4: Circle Animation */
 .img-4 {
   position: relative;
 }
@@ -212,6 +216,7 @@ figcaption {
   }
 }
 
+/* Image 5: Tilt */
 .img-5 img {
   transition: 1s ease;
 }
@@ -223,6 +228,7 @@ figcaption {
   transition: 1s ease;
 }
 
+/* Image 6:  Rectangle to Oval */
 .img-6 img {
   transition: 1s ease;
 }
@@ -231,6 +237,8 @@ figcaption {
   border-radius: 50%;
   transition: 1s ease;
 }
+
+/* Video */
 
 #video {
   display: flex;
@@ -259,6 +267,8 @@ figcaption {
   width: 100%;
 }
 
+/* Blog */
+
 h6 {
   font-size: 1.5rem;
   text-align: center;
@@ -278,9 +288,13 @@ article div {
   padding-right: 10pt;
 }
 
+/* Footer */
+
 footer {
   border-top: 2px solid #8339db;
 }
+
+/* Contact Form */
 
 #formElements {
   display: grid;
@@ -392,6 +406,9 @@ legend {
   );
 }
 
+/* Media Queries */
+
+/* iPad */
 @media screen and (min-width: 52em) {
   #gallery figure {
     display: grid;
@@ -428,6 +445,7 @@ legend {
   }
 }
 
+/* Full Screen */
 @media screen and (min-width: 90em) {
   #gallery {
     display: grid;

@@ -60,3 +60,7 @@ Video footage by [Åke Wall from Pexels](https://www.pexels.com/video/a-person-w
 [W3: How To - Image Hover Overlay](https://www.w3schools.com/howto/howto_css_image_overlay.asp)
 
 [10 Simple CSS Hover Effects](https://thebrandsmen.com/css-image-hover-effects/)
+
+[How CSS Works in the Browser](https://www.zeolearn.com/magazine/components-of-web-browsers)
+
+[How to Make All Browsers Understand Your CSS](https://dev.to/neshaz/how-to-make-all-browsers-understand-your-css-2a4e)

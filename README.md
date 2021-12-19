@@ -9,7 +9,7 @@ The Header consists of a logo, created through [Figma](https://www.figma.com), a
 
 ### Nav Bar
 
-The navigation bar uses anchor tags to link to section ids throughout the page. The current design - with the exception of the font selection - was created by Prof Cynthia Teeters as part of a lecture. It will likely be redesigned before this project's completion.
+The navigation bar uses anchor tags to link to section ids throughout the page. Much of the design is based on a video lecture from Prof Cynthia Teeters at Raritan Valley Community College. It has been altered to display a hamburger drop down menu at smaller screen sizes based on code by Angela Delise, which can be found in the Citations, below.
 
 ### Logo
 
@@ -66,6 +66,8 @@ Video footage by [Åke Wall from Pexels](https://www.pexels.com/video/a-person-w
 [How to Make All Browsers Understand Your CSS](https://dev.to/neshaz/how-to-make-all-browsers-understand-your-css-2a4e)
 
 [MDN Web Docs: @keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+
+[Responsibe Navigation Bar Only CSS | Mobile First Design]{https://www.youtube.com/watch?v=SIzi9z8mrTk&t=143s}
 
 [Hamburger Menu Icon](https://icons8.com/icons/set/menu)
 

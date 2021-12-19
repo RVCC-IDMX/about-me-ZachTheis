@@ -130,13 +130,32 @@
         <article id="lit"> 
             <h1> CSS Image Hover Effects
                 <div>
-                    <p>There was no mirror, at that date, in my room; that which stands beside me as I write, was brought there later on and for the very purpose of these transformations. The night however, was far gone into the morning--the morning, black as it was, was nearly ripe for the conception of the day--the inmates of my house were locked in the most rigorous hours of slumber; and I determined, flushed as I was with hope and triumph, to venture in my new shape as far as to my bedroom. I crossed the yard, wherein the constellations looked down upon me, I could have thought, with wonder, the first creature of that sort that their unsleeping vigilance had yet disclosed to them; I stole through the corridors, a stranger in my own house; and coming to my room, I saw for the first time the appearance of Edward Hyde.
+                    <p>Much like links, images in CSS can be manipulated by users running a website using the :hover pseudoclass. Hover effects can be as simple as hiding or revealing an image or can involve more complex transformations or even animations. The Photo Gallery, above, shows six examples of this, though many, many more are possible. While I would typically use the same image hover effect for all images in the gallery, in the interest of demonstrating several techniques, each of the above images demonstrates a different effect.</p>
+                    
+                    <p></p>
+                    
+                    <p>Most image hover effects are implemented by giving the image a div tag with the class “container,” though this is not necessary. For my gallery, since all of the images were contained as figures, I gave each figure a separate class – from img-1 through img-5 – in place of a container class. The container is typically the element that triggers the hover state in its child elements.</p>
+                    
+                    <p></p>
+                    
+                    <p>The first image in the gallery creates an overlay with a fade-in effect. The overlay itself is a separate div which can be styled in any number of ways. For simplicity, my overlay is a solid box that matches the image in size and a border radius when the containing figure has one. The effect is achieved by setting the overlay’s opacity to 0, making it fully transparent, then changing the opacity to 1 when the mouse hovers over the container.</p>
+                    
+                    <p></p>
+                    
+                    <p>Images 2 and 3 change the image using the rendering engine of the browser. Each browser has its own rendering engine: Webkit for Safari, Blink for Chrome and Opera (older versions of Opera use Presto), Gecko for Firefox, Trident for Internet Explorer, and EdgeHTML for Edge. Each rendering engine operates differently and requires a different command, so best practices are to include the rendering commands for multiple browsers. This can be seen in styles.css; all commands to the rendering engine are repeated several times with different prefixes to instruct different browsers, which are referred to as vendor prefixes (-webkit-, -ms-, -moz-, and -o-). It’s good practice to also include the same property with no prefix. Doing this allows the browser you’re running in to use its native rendering engine if it supports the property. </p>
+                    
+                    <p></p>
+                    
+                    <p>In Image 2, the rendering engine applies a 3-pixel blur to the image upon hover. Image 3 applies a sepia filter, rendering the image in shades of tan. In both cases, a .3s ease-in-out value for the transition property is used, causing the image to transition to and from the hover state in 0.3 seconds. The same transition effect is achieved with a different implementation in later images. </p>
+                    
+                    <p></p>
+                    
+                    <p>Image 4 creates an animation hover effect, a transparent white circle that starts in the center of the image, rapidly expands, then vanishes. This uses the rendering engine’s animation property, which requires keyframes to be defined. These allow the programmer to set the animation’s state at intermediate points of the animation, defined by percentages of the animation’s completion, allowing for much more control over the effect than the transition property. As with all properties that rely on the rendering engine, keyframes require the use of a prefix to instruct a specific rendering engine and should be followed with a set of keyframes with no prefix. </p>
+                    
+                    <p></p>
+                    
+                    <p>Images 5 and 6 alter the display of their images, adding a tilt and a border-radius respectively. Since these properties are supported in all browsers, they do not require vendor prefixes. In these examples, an equivalent effect to ease-in-out has been achieved with the transition property on both the native and hover states of the container, using the same value for each. </p>
 
-                    </p>
-
-                    <p>I must here speak by theory alone, saying not that which I know, but that which I suppose to be most probable. The evil side of my nature, to which I had now transferred the stamping efficacy, was less robust and less developed than the good which I had just deposed. Again, in the course of my life, which had been, after all, nine tenths a life of effort, virtue and control, it had been much less exercised and much less exhausted. And hence, as I think, it came about that Edward Hyde was so much smaller, slighter and younger than Henry Jekyll. Even as good shone upon the countenance of the one, evil was written broadly and plainly on the face of the other. Evil besides (which I must still believe to be the lethal side of man) had left on that body an imprint of deformity and decay. And yet when I looked upon that ugly idol in the glass, I was conscious of no repugnance, rather of a leap of welcome. This, too, was myself. It seemed natural and human. In my eyes it bore a livelier image of the spirit, it seemed more express and single, than the imperfect and divided countenance I had been hitherto accustomed to call mine. And in so far I was doubtless right. I have observed that when I wore the semblance of Edward Hyde, none could come near to me at first without a visible misgiving of the flesh. This, as I take it, was because all human beings, as we meet them, are commingled out of good and evil: and Edward Hyde, alone in the ranks of mankind, was pure evil.
-
-                    </p>
                 </div>
             </h1>
         </article>

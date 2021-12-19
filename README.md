@@ -64,3 +64,5 @@ Video footage by [Åke Wall from Pexels](https://www.pexels.com/video/a-person-w
 [How CSS Works in the Browser](https://www.zeolearn.com/magazine/components-of-web-browsers)
 
 [How to Make All Browsers Understand Your CSS](https://dev.to/neshaz/how-to-make-all-browsers-understand-your-css-2a4e)
+
+[MDN Web Docs: @keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)

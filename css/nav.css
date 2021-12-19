@@ -19,8 +19,8 @@ main {
 }
 
 /* navbar */
-.navbar {
-  background-color: #333;
+.nav {
+  background-color: #444;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -44,20 +44,69 @@ main {
   font-size: 1.2em;
 }
 
-/* navigation list */
-.navbar-links li {
+/* navigation links */
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 1rem, 1rem;
+  right: 3%;
+}
+
+.nav__toggle svg {
+  width: 2rem;
+  fill: #333;
+}
+
+.close {
+  display: none;
+}
+
+.menu {
+  margin-top: 0.2rem;
+}
+
+#nav__checkbox {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+.nav__menu li {
   list-style: none;
-  display: block;
+  display: none;
   padding: 0.3em 0;
+}
+
+#nav__checkbox:checked ~ ul {
+  display: block;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
 }
 
 /*  
  style all a tags in header 
  and then on hover
 */
-.navbar-links a {
+.nav__menu a {
   color: whitesmoke;
-  background-color: #333;
+  background-color: #444;
   font-size: 2rem;
   padding: 0.5rem 0.5rem;
   letter-spacing: 2px;
@@ -65,8 +114,7 @@ main {
   display: inline-block;
 }
 
-.navbar-links a:hover,
-.navbar-links a:focus {
+.nav__menu a:hover {
   filter: invert(1);
   border-radius: 10px;
   outline: none;
@@ -78,13 +126,27 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 @media screen and (min-width: 45rem) {
-  .navbar {
+  .nav {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .navbar ul {
+  .nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+  }
+
+  .nav li {
+    display: block;
+  }
+
+  .nav__toggle .close {
+    display: none;
+    margin-top: 0.5rem;
+  }
+
+  .nav__toggle .menu {
+    display: none;
   }
 }

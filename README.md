@@ -66,3 +66,7 @@ Video footage by [Åke Wall from Pexels](https://www.pexels.com/video/a-person-w
 [How to Make All Browsers Understand Your CSS](https://dev.to/neshaz/how-to-make-all-browsers-understand-your-css-2a4e)
 
 [MDN Web Docs: @keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+
+[Hamburger Menu Icon](https://icons8.com/icons/set/menu)
+
+[Close Menu Icon](https://icons8.com/icons/set/close)

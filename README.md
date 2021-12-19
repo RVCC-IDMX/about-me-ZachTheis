@@ -35,7 +35,7 @@ The bio section is a bullet point list of a few facts about me, which will be up
 
 My first foray into responsive design, the photo gallery's layout changes on devices with different size screens. On small screens, such as iPhones, images are contained in a tan box with a thick dark green border with a border-radius on all corners and a slight box-shadow. The images have a caption describing them below the picture. On slighly larger devices, such as iPads, the caption moves to the right of the image, centered horizontally and vertically in a grid column that takes up 1/3 of the box. On full screens, the tan box with the green border disappears. The images still have a shadow, but are now laid out horizontally instead of vertically. The captions appear flush to the bottom of the image in a tan box.
 
-This section displays the grid and flexbox display properties, as well as media queries.
+This section displays the grid and flexbox display properties, as well as media queries. Each image also demonstrates a different hover effect, which are used for examples for the blog.
 
 ### Video
 
@@ -43,7 +43,9 @@ The video footage embedded in this section is free use footage from [Pexels](htt
 
 ### Blog
 
-This section will be updated shortly.
+This article discusses the implementation of image hover effects, using the photo gallery to demonstrate the effects discussed. Citations for the material can be found below.
+
+During the final draft of the project, I changed the style of this section to have dark grey text on a tan background, as I decided the bright green text against a purple background cause too much eyestrain at such a small font size and for so much text. The dark styling strongly resembles that of the photo gallery at smaller screen sizes, giving the page a feeling of unity that it previously lacked.
 
 ### Contact Form
 
@@ -67,7 +69,7 @@ Video footage by [Åke Wall from Pexels](https://www.pexels.com/video/a-person-w
 
 [MDN Web Docs: @keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
 
-[Responsibe Navigation Bar Only CSS | Mobile First Design]{https://www.youtube.com/watch?v=SIzi9z8mrTk&t=143s}
+[Responsibe Navigation Bar Only CSS | Mobile First Design](https://www.youtube.com/watch?v=SIzi9z8mrTk&t=143s)
 
 [Hamburger Menu Icon](https://icons8.com/icons/set/menu)
 

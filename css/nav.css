@@ -57,6 +57,11 @@ main {
   fill: #333;
 }
 
+/* 
+** The default (unchecked) state of the checkbox hides the close
+** icon and the checkbox itself, displaying the hamburger icon.
+** The list items are also hidden by the default state. 
+*/
 .close {
   display: none;
 }
@@ -83,10 +88,10 @@ main {
   padding: 0.3em 0;
 }
 
-#nav__checkbox:checked ~ ul {
-  display: block;
-}
-
+/* 
+** The checked state of the checkbox reveals the list items and
+** close icon and hides the hamburger icon. 
+*/
 #nav__checkbox:checked ~ ul.nav__menu li {
   display: block;
 }
